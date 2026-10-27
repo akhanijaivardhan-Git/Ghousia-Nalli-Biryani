@@ -1658,31 +1658,7 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-    
 
-<script>
-    // Disable Right Click
-    document.addEventListener("contextmenu", function (event) {
-        event.preventDefault();
-        alert("Right-click is disabled on this website!");
-    });
-
-    // Block Ctrl+U, Ctrl+S, Ctrl+Shift+I, F12
-    document.addEventListener("keydown", function (event) {
-        const key = event.key.toLowerCase();
-
-        if (
-            (event.ctrlKey && key === "u") ||
-            (event.ctrlKey && key === "s") ||
-            (event.ctrlKey && event.shiftKey && key === "i") ||
-            (event.ctrlKey && event.shiftKey && key === "j") ||
-            key === "f12"
-        ) {
-            event.preventDefault();
-            alert("Sorry! Viewing the source code is disabled on this website.");
-        }
-    });
-</script>
 </body>
 </html>
 
